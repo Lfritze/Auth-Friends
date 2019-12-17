@@ -49,6 +49,10 @@ export const LoginForm = props => {
             <Form.Input
               fluid
               icon="user"
+              type="text"
+              name="username"
+              value={props.username}
+              onChange={handleChange}
               iconPosition="left"
               placeholder="Username"
             />
@@ -56,13 +60,11 @@ export const LoginForm = props => {
               fluid
               icon="lock"
               type="text"
-              name="username"
-              label="username"
-              value={props.username}
-              onCHange={handleChange}
+              name="password"
+              value={props.password}
+              onChange={handleChange}
               iconPosition="left"
               placeholder="Password"
-              type="password"
             />
 
             <Button color="teal" fluid size="large">

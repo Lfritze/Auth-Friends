@@ -21,3 +21,5 @@ export default PrivateRoute;
 // has same API as <Route>
 //renders a route and passes all the props
 // checks if the user is authenticated
+
+///rest is a prop
