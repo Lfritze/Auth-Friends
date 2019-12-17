@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { axiosWithAUth, axiosWithAuth } from "../utils/axiosWithAuth";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 import FriendCard from "./FriendCard";
+import AddFriendForm from "./AddFriendForm";
 
 const FriendsList = () => {
   const [friends, setFriends] = useState([]);
@@ -15,10 +16,12 @@ const FriendsList = () => {
   return (
     <div className="list-container">
       <div className="friends-list-container">
-        <div className="add-friend-form">add friend form here</div>
+        <div className="add-friend-form">
+          <AddFriendForm />
+        </div>
         <div className="friend-card-mapped">
           {friends.map((friend, idx) => (
-            <friendCard key={idx} friend={friend} />
+            <FriendCard key={idx} friend={friend} />
           ))}
         </div>
       </div>
