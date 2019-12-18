@@ -1,5 +1,5 @@
 import React from "react";
-import { axiosWithAUth } from "../utils/axiosWithAuth";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 import {
   Row,
   Col,
@@ -31,7 +31,7 @@ class Login extends React.Component {
   login = event => {
     event.preventDefault();
     this.setState({ isFetching: true });
-    axiosWithAUth()
+    axiosWithAuth()
       .post("/login", this.state.credentials)
       .then(res => {
         localStorage.setItem("token", res.data.payload);

@@ -16,12 +16,12 @@ import {
 
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 
-import Ken from "../../img/friends/Ken.png";
-import Jose from "../../img/friends/Jose.jpg";
-import Barry from "../../img/friends/Barry.jpg";
-import Rickey from "../../img/friends/Rickey.jpg";
-import Sammy from "../../img/friends/Sammy.jpg";
-import Babe from "../../img/friends/Babe.jpg";
+import Ken from "../img/friends/Ken.jpg";
+import Jose from "../img/friends/Jose.jpg";
+import Barry from "../img/friends/Barry.jpg";
+import Rickey from "../img/friends/Rickey.jpg";
+import Sammy from "../img/friends/Sammy.jpg";
+import Babe from "../img/friends/Babe.jpg";
 
 class FriendCard extends React.Component {
   state = {

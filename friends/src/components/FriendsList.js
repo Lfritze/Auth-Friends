@@ -9,7 +9,7 @@ import {
   Button,
   Spinner
 } from "reactstrap";
-import { axiosWithAuth } from "../utils";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 import FriendCard from "./FriendCard";
 
 class FriendsList extends React.Component {
@@ -130,3 +130,4 @@ class FriendsList extends React.Component {
     );
   }
 }
+export default FriendsList;
