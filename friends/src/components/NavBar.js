@@ -25,7 +25,7 @@ const NavBar = props => {
         className="logo mr-auto"
         onClick={() => props.history.push("/friends")}
       >
-        <span className="red">Friends</span>
+        <span className="red">Baseball Legends</span>
       </NavbarBrand>
       <NavbarToggler onClick={toggleNavBar} className="mr-2" />
       <Collapse isOpen={!collapsed} navbar>
