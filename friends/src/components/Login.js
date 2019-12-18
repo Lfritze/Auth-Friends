@@ -1,5 +1,5 @@
 import React from "react";
-import { axiosWithAUth } from "../utils/axiosWithAUth";
+import { axiosWithAUth } from "../utils/axiosWithAuth";
 import {
   Row,
   Col,
